@@ -1,0 +1,16 @@
+{
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    //是否开启文件成组
+  "explorer.fileNesting.enabled": true,
+  //文件组是否默认展开
+  "explorer.fileNesting.expand": false,
+  //文件成组规则
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "*.json, *.config.js, *.config.ts,*.cjs",
+    "README.md": ".git*, .eslint*, .prettier*, .stylelint*, commitlint*, .editorconfig,LICENSE,pnpm*,.npm*"
+  }
+}
