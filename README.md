@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AiuTest-Python
 ## 技术栈
 ```python
@@ -47,3 +48,6 @@
 |sql提取|sqlExData|
 |是否执行|is_true|分组执行|
 
+=======
+# AiuTest-Python
+>>>>>>> 8d854ee9935a0477c73dec0762238774daf30b32
