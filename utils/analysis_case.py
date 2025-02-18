@@ -9,12 +9,14 @@ def analysis_case(case):
     method = case["method"]
     url = BASE_URL + case["path"]
     headers = eval(case["headers"]) if isinstance(case["headers"],str) else None
+    params = eval(case["params"]) if isinstance(case["params"],str) else None
     data = eval(case["data"]) if isinstance(case["data"],str) else None
     json = eval(case["json"]) if isinstance(case["json"],str) else None
     files = eval(case["files"]) if isinstance(case["files"],str) else None
     request_data = {
-       "method" : method,
+        "method" : method,
         "url" : url,
+        "params" : params,
         "headers" : headers,
         "data" : data,
         "json" : json,          

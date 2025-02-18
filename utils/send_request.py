@@ -19,7 +19,7 @@ def send_jdbc_request(sql, index=0):
         database=DB_DATABASE,
         user=DB_USER,
         password=DB_PASSWORD,
-        harset=DB_CHARSET
+        charset=DB_CHARSET
     )
     cur = conn.cursor()
             
