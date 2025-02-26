@@ -1,0 +1,4 @@
+INFO     root:test_runner.py:29 0.用例ID:30 模块:资金管理 场景:转账失败 标题:AIU无上下级关系
+INFO     root:analysis_case.py:26 1.解析请求数据, 请求数据为: {'method': 'post', 'url': 'http://47.130.30.230/prod-api/system/fundsOper/transfer', 'params': {'lang': 'zh_CN'}, 'headers': {'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjBjMzBhNjc2LTgzYjgtNGQ2ZC1iN2U4LTExMjQyMDY4MDNhMCJ9.N2aSI3Wvn0Ij-G6zInBJl2zWj8TdF7PJU4SA28AVOvKU5QHDJEpCuB_oAQfhB8JqxSuNXeV3BK0j9Aeoo3F9Kw'}, 'data': None, 'json': {'coinType': 'AIU', 'myEmail': 'loongjjxs@qq.com', 'email': '18779082568@163.com', 'validateCode': 'tU.llmBfMv;YJRVi!&pd7TDyh8bYEU=T', 'transferAmount': '100', 'googleCode': ''}, 'files': None}
+INFO     root:send_request.py:11 2.发送HTTP请求响应文本为: {"msg":"不滿足上下級關係","code":500}
+INFO     root:asserts_utlis.py:10 3.HTTP响应断言内容: 实际结果(不滿足上下級關係) == 预期结果(不滿足上下級關係)
