@@ -120,15 +120,15 @@ def send_allure_report_to_telegram():
         send_photo_to_telegram(image_data)
 
 
-#         summary_message = f"""
-# <b>Allure 报告摘要：</b>
-# 总测试用例数: {total_tests}
-# 通过: {passed_tests}
-# 失败: {failed_tests}
-# 跳过: {skipped_tests}
-# 损坏: {broken_tests}
-# """
-#         send_telegram_message(summary_message)
+        summary_message = f"""
+<b>Allure 报告摘要：</b>
+总测试用例数: {total_tests}
+通过: {passed_tests}
+失败: {failed_tests}
+跳过: {skipped_tests}
+损坏: {broken_tests}
+"""
+        send_telegram_message(summary_message)
 
     except FileNotFoundError:
         print(f"Error: summary.json not found in {ALLURE_REPORT_DIR}/widgets/")
